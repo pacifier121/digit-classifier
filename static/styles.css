@@ -1,0 +1,130 @@
+html {
+    --box-width: 336px;
+    --box-height: 336px;
+}
+
+body {
+    background: #333;
+    color: #eee;
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.sub-heading {
+    margin: 0;
+    font-size: 14px;
+    color: #777;
+}
+
+.heading {
+    margin: 15px 0;
+    font-size: 40px;
+    font-family: "Times New Roman", serif;
+}
+
+.outer-container {
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+}
+
+.inner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box {
+    border: 5px solid white;
+    width: var(--box-width);
+    height: var(--box-height);
+}
+
+.prediction-container {
+    border: 3px solid white;
+    border-bottom: none;
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+    color: rgb(134, 242, 250);
+    text-align: center;
+    line-height: 50px;
+}
+
+.preview-prediction-container{
+    display: flex;
+}
+
+.preview-demo{
+    flex-grow: 1;
+    line-height: 50px;
+    text-align: center;
+    border: 1px solid #555;
+    border-radius: 10px;
+}
+
+.preview-img{
+    width: 340px;
+    display: none;
+    position: absolute;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+.preview-demo:hover .preview-img{
+    display: block;
+}
+
+.reset-button {
+    width: 50%;
+    line-height: 50px;
+    font-size: 20px;
+    color: black;
+    background: white;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 5px;
+    user-select: none;
+}
+
+.reset-button:hover {
+    cursor: pointer;
+    background: rgb(200, 238, 250);
+}
+
+.dummy-canvas {
+    /* display: inline-block; */
+    /* width: 150px;
+    height: 150px; */
+    width: 28px;
+    height: 28px;
+}
+
+#imageData-input {
+    display: none;
+}
+
+.dropdown {
+    flex-grow: 1;
+    margin: 5px 5px 0 0;
+    line-height: 50px;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.dropdow-item:hover {
+    background-color: #222;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+}

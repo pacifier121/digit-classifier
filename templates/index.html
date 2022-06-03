@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perceptron Digit Classifier</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css')}}">
+</head>
+
+<body>
+    <header>
+        <h1 class="heading">Digit Classifier</h1>
+        <h2 class="sub-heading">A Perceptron and SGD Classifier<br/> based ML model (trained on MNIST digit dataset)</h2>
+    </header>
+    <div class="outer-container">
+        <div class="inner-container">
+            <div class="preview-prediction-container">
+                <div class="preview-demo">
+                    <img class="preview-img" src="{{ url_for('static', filename='preview.gif')}}" alt="preview">
+                    <span>How to?</span>
+                </div>
+                <div class="prediction-container" id="prediction"></div>
+            </div>
+            <div class="box">
+                <canvas id="canvas" width="336" , height="336">
+                    </canvas>
+            </div>
+            <div class="buttons-container">
+                <select class="dropdown" id="classifier-dropdown">
+                    <option value="Perceptron" class="dropdown-item">Perceptron</option>
+                    <option selected value="SGDClassifier" class="dropdown-item">SGDClassifier</option>
+                    <!-- <option value="RandomForest" class="dropdown-item">RandomForest</option> -->
+                    <!-- <option value="Softmax Regression" class="dropdown-item">Softmax Regression</option> -->
+                </select>
+                <button class="reset-button" id="reset-button">Reset</button>
+            </div>
+        </div>
+        <canvas class="dummy-canvas" id="dummy-canvas" width="28" , height="28">
+            </canvas>
+    </div>
+
+    <!-- A form to post image data -->
+    <script type="text/javascript" src="{{ url_for('static', filename='script.js')}}"></script>
+</body>
+
+</html>
