@@ -8,7 +8,7 @@ An ML model that classifies a digit drawn on screen from 0 to 9.
 2. Install virtualenv with<br>
    python -m pip install virtualenv
    <br>
-   python -m pip virtualenv ../ML_Env
+   python -m virtualenv ../ML_Env
 
 <br>
 3. Activate virtualenv<br>
