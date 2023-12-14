@@ -3,4 +3,4 @@ gunicorn==20.1.0
 Jinja2==3.1.2
 numpy
 scikit-learn
-pickle
+Werkzeug==2.2.2
