@@ -6,9 +6,9 @@ An ML model that classifies a digit drawn on screen from 0 to 9.
    git clone __repository_link__ __folder_name__
 
 2. Install virtualenv with<br>
-   python -m install virtualenv
+   python -m pip install virtualenv
    <br>
-   python -m vitualenv ../ML_Env
+   python -m pip vitualenv ../ML_Env
 
 <br>
 3. Activate virtualenv<br>
