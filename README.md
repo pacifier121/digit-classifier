@@ -12,6 +12,7 @@ An ML model that classifies a digit drawn on screen from 0 to 9.
 
 <br>
 3. Activate virtualenv<br>
+   . ../ML_Env/Scripts/activate
 
 4. Install dependencies<br>
    python -m pip install -r requirements.txt
