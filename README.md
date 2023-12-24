@@ -22,3 +22,6 @@ An ML model that classifies a digit drawn on screen from 0 to 9.
 
 6. Go to port mentioned (default 5000) on localhost<br>
    http://localhost:5000/
+
+## Check out the live link here
+https://digit-classifier-fxd9.onrender.com/
